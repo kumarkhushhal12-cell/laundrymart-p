@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LaundryMart</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header id="home">
+        <nav class="navbar">
+            <div class="logo">
+                <h2>LaundryMart</h2>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#bookservice">Services</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+            </ul>
+            <div>
+                <button class="user-btn">Username</button>
+            </div>
+        </nav>
+    </header>
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Revitalize Your Clothes with Expert <span>Laundry Services!</span></h1>
+            <p>From premium dry cleaning to swift wash and fold, we deliver care and convenience. Schedule a pickup and rediscover the freshness of your clothes today!</p>
+            <button class="hero-btn" onclick="location.href='#bookservice'">Book a Service Today</button>
+        </div>
+        <div class="hero-image">
+            <img src="https://i.pinimg.com/originals/82/a2/69/82a269f2bd76891d0fa7efb9f8bfeaae.jpg" alt="Laundry Service Image">
+        </div>
+    </section>
+    <section class="overview">
+        <div class="overview-container">
+            <div class="overview-item">
+                <h3>Our Achievements</h3>
+            </div>
+            <div class="overview-item">
+                <h3>15+</h3>
+                <p>Laundry Services</p>
+            </div>
+            <div class="overview-item">
+                <h3>240+</h3>
+                <p>Happy Customers</p>
+            </div>
+            <div class="overview-item">
+                <h3>2+ Yrs</h3>
+                <p>Experience</p>
+            </div>
+        </div>
+    </section>
+    <section class="booking" id="bookservice">
+        <div class="booking-container">
+            <div class="services">
+                <h2>Our Services</h2>
+                <p>Click on the Add to Cart Button to Add the Services To Your Cart</p>
+                <div class="service-item">
+                    <span class="service-name">Dry Cleaning</span>
+                    <span>₹200</span>
+                    <button class="add-btn" data-price="200">Add Item</button>
+                </div>
+
+                <div class="service-item">
+                    <span class="service-name">Wash & Fold</span>
+                    <span>₹100</span>
+                    <button class="add-btn" data-price="100">Add Item</button>
+                 </div>
+
+                    <div class="service-item">
+                        <span class="service-name">Ironing</span>
+                         <span>₹30</span>
+                         <button class="add-btn" data-price="30">Add Item</button>
+                     </div>
+
+                    <div class="service-item">
+                         <span class="service-name">Stain Removal</span>
+                        <span>₹500</span>
+                        <button class="add-btn" data-price="500">Add Item</button>
+                    </div>
+                    <div class="service-item">
+                         <span class="service-name">Leather & Suede Cleaning</span>
+                        <span>₹999</span>
+                        <button class="add-btn" data-price="999">Add Item</button>
+                    </div>
+                    <div class="service-item">
+                         <span class="service-name">Wedding Dress Cleaning</span>
+                        <span>₹2800</span>
+                        <button class="add-btn" data-price="2800">Add Item</button>
+                    </div>
+            </div>
+            <div class="cart">
+                <h3>Added Items</h3>
+                <div class="cart-items" id="cartItems">
+                    <p>No items added</p>
+                </div>
+                <h4>Total Amount: ₹<span id="total">0</span></h4>
+                <h3>Book Now</h3>
+                <input id="name" type="text" placeholder="Enter Your Name" required>
+                <input id="email" type="email" placeholder="Enter Your email" required>
+                <input id="confirmEmail" type="email" placeholder="Confirm Your email" required>
+                <input id="phone" type="tel" placeholder="Phone Number" required>
+                <button class="book-btn">Book Now</button>
+                <p id="message"></p>
+            </div>
+        </div>
+    </section>
+    <section class="quality" id="about">
+
+<h2>Why Choose Our Laundry Service</h2>
+
+<div class="quality-container">
+
+<div class="quality-card">
+<img src="data:image/png;base64,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" alt="img">
+<h4>Premium Services</h4>
+<p>High quality cleaning for all types of clothes.</p>
+</div>
+
+<div class="quality-card">
+<img src="data:image/png;base64,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" alt="img">
+<h4>Quick Support</h4>
+<p>Our team is always ready to assist you.</p>
+</div>
+
+<div class="quality-card">
+<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAJQAAACUCAMAAABC4vDmAAAAY1BMVEX///8AAAD6+vqFhYUzMzPg4OBVVVW1tbXw8PDr6+vj4+M3Nzf09PSrq6vn5+e9vb2hoaHLy8soKCgQEBBCQkLU1NSMjIx8fHxdXV0VFRUtLS1xcXGVlZUdHR3a2tpjY2NMTEwUzlMfAAAJkElEQVR4nO1b14KqMBCVJtIF6f3/v/LuTAKEkEDE6+4L50mRcphMzpTE2+3ChQsXLly4cOHChQsXLvwR/Cxum9FMksQcm2fc+39N6OZHxV1bozQi/Q8ZPexCE6OI/sheul1KKP3gVQZ/QSkwFwppUxRGbhTFkDIH7d/mZM1Weg1x70xOpIdWNLymnxr3NynpT/pY04gFP0dGTX+3f8/lnYY80mtlprBaOrjG45c4WeSB3dPZOcl9VnjWvf8VThlx5pJ7WsSPZEYELLV+gVNM/PjJHY5+jkXcsRzPrLOvc8o8fBD//Nvwc3TgD0Y4hGb4ZU4Ozqt0+/JCUrcY3S/9Lit/wIcInFdM6tZ3KFhfVQb0kpfIdSEK5oLjcSXywP+JCKVApJe3MO1KoUTE+B7Ca/4LHJzkkkjr9+sxig1qnhYF5GsDiLcv1M4NfpypxU96s/MqH+OBoUUtyOJA30mMCXHQv5RgoZer5SM2ymZOxyyAL+1XOLkJGErp1IgEmMk4PgQmby9SngZ6lNIsQstow5Ig2F/zKjDUXcUzSHAZmaQFTfWNCRiretTGTj+ApLD6glbh6CmkbNSf1mdm3Vdk3RnVNMoW2Ilq1fjfVaE3ld7Vxmwr3cy09ispDHiFt5Pa6q7l6pM/bU2SQQCkHhlaHE7n8aCco1xqosYz0yJPNMlpfjIbOk5NDvezFSLkS4XMKcJBWyCw048hIZYb8Mlh6tUZ5+aA7+1cqrP1u8ScxaRUoSkgpRhROTjVjko92dtLJBK8LUEbBq8tqe5UcYGRnlQLcRAEq3s8MM1qbQzY6eqy5VycAmRgY5tFZICwtgGP+DgALKTIBGOrGdR6iGyo2yxfIlr2/FE4zVg7s0g3FZOQFMQJnZSYbCADDe/AKXyOLjEhySykpPRRQmqWEAVSpI9gML8BqRdIWK+ts3Gd9NSGXVKYEUlwkO0sw2eVpuetmjw93HZ46CEYpmZv5A6mZ5JzAxkpZOttgFQPlCKcneOmO46zckKdFIMl1qnN6rLlXCBViRQMpkcdOjzCVBMWkiweiSZN0+yKsbgsEoE7p4IJ5ZucM0wAN7nvk0J3zIWzNGK9QDZj0BUbwQ/MELxNChVZGECIRNRgreouzeN0GA1R7QAWrEUltwopyD22GckkRXc3zo02lidMGBFEww/+OM7frGxCPyiQgsS72w4OyZ+Gw0oFuItiSegtFtTtoa5eEzQFUqEwIuukM3ScUsIcExVZGA0IWXfblj8i5TfC6ZMo2YnkK4VgnmBGitdbAvE8IkVC1MYjg0qp7IolSQYGLexeOaJoc0jK0YSCYmUK5RwKgmiauPXkFJAraMkznpCpOPrtBiNQn6u9XXBbUSkUTf7vgIbWrKIUSqTQJ0XNumNgyiTSMPB/7IjGG+VVI+VjInLGVNj4FD0Ac5tiYlevHEGNFIknZ3qqONdFhuprKql+uYlCiqTQq6rDfHADfBlhewNCFGZiVrcRfFVSMVz6dp2bgZYJO8roa6i8wLvKNr+pkNJx3oo0EBgb4oqE1F/CPh7Wbagy2GpYp4CqpG4PXAMRtjkiiduQFymFJYM7T7lue1tlUjut+mHjqQRYd0nKOggSHYxr/+IF4R1SNHsSDIZkGQS7WrIqFgYW60ScCtyP2LxQI3UjBUq78SsxKXK2RHExShszqfimM3iLFAlSWsOLqGhtxiXlmKzVhlQwp/fZLJ+BMimfPIlfXQvT130tFnpMlrcNmdy2SzBtxKQ65YVxnSx4avmaw4Pb5OLQ3R3yaJkuVgxlZXKhqoo68V4tDeSZ1ONJ21CB9F2dFzORw0YygumkM70txryBhQ6MZj7FL+I+aRPK3GlTQ9r+WspEy35yuLOmFjWQKO3JvcPJCZIydte20N2opO2BqtlLSjFt2TvBbwkRXNeXUdJY2YyWLmGTB3EYhk4YunGQL53GdLeb78wNRzkijCC47Cnq/1EwKug8meZllSRJnSQdY2PP3m/6ZlPasgc6IqY1e8wW62TKCUQ9VYLRPsoGsTQ+3N6hzyHEf4ixcQDdKgS8XmnjHusL5ksKhZAFQ5gcn8fCj4PS62ZCiTcEO9U7c52pKS5Moq2O7xfxTVIni+wgCOwoU148gK6fZkQy8aGDb/18BLfqDjkV2uvzBalAPpsAJVq7n+ZcOV/nuCtMngs7cLyPt/oMu5zovJxPmmd9nCYrpHT+zrXaJwjlE5cAU755c+QU/R1vcyJ2VDHn/njzChaf/MLRAo9MAX8wPZC+eZaGW7VCvtayHvUBsNsSu/wi24Sp+exbaNIlz96sBBTzO1Yf79OqNMW9IP26X6PH0QpUftClPt1jgGsTSubG9PRoWvmjJi5b3kIwu+gByOLzkQf34jjqO67zxro1JPrC0OE74Wrl4KG0no7vyAmCExhjpVVjESkKOrbtBA24oEhfWjcy27ShU1AdruaCdKzX8vV8nDKWqlSbAbiawz/KyWcR6prptcEGgjZ72IyAlhoBrlnVAtFaz5SaMqKl+3Xc6eiv4FL8Jgfq2IsgYA+XeUedj2Gdyg5YCB/l2twGdx8TmeAi/TaXCKezavwKgsDuz6L3Sg07sg0MnwcrT4AHTJZVkU2LSe2eR5FdoDegy6Hwb7NqfQqK+fyOzDIxsZNn44zRs1F8Dx7Z5jTybnfbx/vg7tAaFAOLOYEgPFoDQGo8a725JCYDO09G7I8d92rBpRJ2BpMFnqWUjqiTYJwdj27HmXNcnA1BFtCOpA6NXzIHyDZbRuB9WumobQYDM4/h1BjBwSMcKBGwwd3R92GlaM91g4X4kE7vgy/nYPRNDlM3MGdynwCD1cEw9MUQz6S68b4PTKVS5gDEXNzpmJWDNZPqSNp5nMdvuyPgQbBsWoFf6rK/rBwDZAZMiOSYfSrDceYW8/fCym1eihckhorAvANiCsp3Px/f9MFE4JMssr/0x3Nr+GCf5UTyDqjkcUmYtnW0RN6zWaEnCgHAnBCv8p85vJEDTlYb72JZb3/kKKmoLGneKmx32QDeZ9VXQY97P1PGrVnMd2yvqwXRLTCsLpkaCRUKS7ccUNzui1FcjCEKDi5EtDIMbZCceMFgdV1PMoCzhSVZawtwDlvUN8+UOVgfkZ6rb5FXe50cvNsUjsciL6aO5fk1SvhfYF5M0f+TfcaclnYn7+Vzi//eeTvdpv8XTBhPbw62VqLL/3fpbTzn25Wf/J3Pb+cW1/Af9j2HUWMm9Rio7ATYg2WXZmIOdv9pl+LChQsXLly4cOHChQsXLhzgH9/1efE5GHA5AAAAAElFTkSuQmCC" alt="img">
+<h4>Fast Delivery</h4>
+<p>Get your clothes cleaned and delivered quickly.</p>
+</div>
+
+<div class="quality-card">
+<img src="data:image/png;base64,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" alt="img">
+<h4>Affordable Prices</h4>
+<p>Quality laundry service at reasonable cost.</p>
+</div>
+
+</div>
+
+</section>
+<section class="newsletter">
+
+<div class="newsletter-container">
+
+<h2>Subscribe to our newsletter</h2>
+
+<form class="subscribe-form">
+
+<input type="text" placeholder="Full Name">
+
+<input type="email" placeholder="Email">
+
+<button type="submit">Subscribe</button>
+
+</form>
+
+</div>
+
+</section>
+<footer class="footer" id="contact">
+
+<div class="footer-container">
+
+<div class="footer-col">
+<h3>LaundryMart</h3>
+<p>
+Premium laundry service providing quality cleaning,
+quick delivery, and affordable pricing for all your clothes.
+</p>
+</div>
+
+<div class="footer-col">
+<h4>Important Links</h4>
+<ul>
+<li><a href="#">About Us</a></li>
+<li><a href="#">Services</a></li>
+<li><a href="#">Privacy Policy</a></li>
+<li><a href="#">Terms of Service</a></li>
+</ul>
+</div>
+
+<div class="footer-col">
+<h4>Contact</h4>
+<p>Email: support@laundrymart.com</p>
+<p>Phone: +91 9876543210</p>
+</div>
+
+<div class="footer-col">
+<h4>Follow Us</h4>
+<div class="social-icons">
+<a href="#">🌐</a>
+<a href="#">📘</a>
+<a href="#">📸</a>
+<a href="#">🐦</a>
+</div>
+</div>
+
+</div>
+
+</footer>
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
