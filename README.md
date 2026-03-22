@@ -1,95 +1,39 @@
-# 🧺 Laundrymart Booking Website
+# LaundryMart Website
 
-## 📌 Project Description
+This is a simple laundry service website made using HTML, CSS, and JavaScript.
 
-This is a responsive laundrymart Booking Website where users can select services, add them to a cart, and book them online. The project is built using HTML, CSS, and JavaScript, focusing on beginner-friendly structure and functionality.
+## What I made
 
----
+- A homepage with navbar and hero section
+- Services section where users can add items to cart
+- Cart system to show selected services and total price
+- Booking form with name, email, and phone
+- Email sending using EmailJS
+- Newsletter subscription form
+- Footer with contact details
 
-## ✨ Features
+## Features
 
-* Add services to cart
-* Dynamic total price calculation
-* Booking form with user details
-* Email confirmation using EmailJS
-* Form validation (email & phone)
-* Responsive design for all devices
-* Success and error messages for user actions
+- Add and remove services from cart
+- Total price updates automatically
+- Basic form validation (name, email, confirm email)
+- Sends booking details through email
+- Simple mobile responsive design using media query
 
----
+## Technologies used
 
-## 🛠️ Technologies Used
+- HTML
+- CSS
+- JavaScript
+- EmailJS
 
-* HTML5
-* CSS3
-* JavaScript (Vanilla JS)
-* EmailJS
+## How to run
 
----
+1. Download all files
+2. Open `index.html` in browser
 
-## ⚙️ How to Run Locally
+## Notes
 
-1. Download or clone this repository
-2. Open the project folder
-3. Open `index.html` in your browser
-
----
-
-## 📧 EmailJS Setup
-
-1. Create an account on EmailJS
-
-2. Add an Email Service (e.g., Gmail)
-
-3. Create an Email Template
-
-4. Copy your:
-
-   * Service ID
-   * Template ID
-   * Public Key
-
-5. Add them in your JavaScript file:
-
-```
-emailjs.init("YOUR_PUBLIC_KEY");
-
-emailjs.send("YOUR_SERVICE_ID", "YOUR_TEMPLATE_ID", {
-  name: "User Name",
-  email: "user@email.com",
-});
-```
-
----
-
-## 🚀 Deployment
-
-This project can be deployed using Netlify:
-
-1. Go to Netlify
-2. Drag and drop your project folder
-3. Get your live website link
-
----
-
-## 🔐 Security Note
-
-This project uses the EmailJS public key in the frontend, which is safe to expose.
-In a production-level application, sensitive API keys should be stored in environment variables (.env) and handled through a backend server.
-
----
-
-## 📷 Future Improvements
-
-* Add backend integration
-* Store bookings in database
-* User authentication system
-* Payment integration
-
----
-
-## 🙌 Author
-
-Created by Khushhal Kumar
-
----
+- This is a beginner project for practice
+- Email sending works using EmailJS setup
+- Design is simple and basic
